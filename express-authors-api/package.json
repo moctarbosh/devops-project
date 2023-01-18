@@ -1,0 +1,17 @@
+{
+  "name": "express-test",
+  "version": "1.0.0",
+  "description": "quick start for developing a backend API with node and express",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --forceExit",
+    "start": "node server.js"
+  },
+  "author": "Jason M. Fisher",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "jest": "^29.3.1",
+    "supertest": "^6.3.3"
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "Id": 1,
+    "FirstName": "Edgar",
+    "MiddleName": "Allan",
+    "LastName": "Poe",
+    "Genres": [
+      "horror",
+      "macabre",
+      "Gothic",
+      "satire",
+      "science fiction"
+    ]
+  },
+  {
+    "Id": 2,
+    "FirstName": "Robert",
+    "MiddleName": "Anson",
+    "LastName": "Heinlein",
+    "Genres": [
+      "science fiction",
+      "fantasy"
+    ]
+  },
+  {
+    "Id": 3,
+    "FirstName": "Ursula",
+    "MiddleName": "Kroeber",
+    "LastName": "Le Guin",
+    "Genres": [
+      "fantasy",
+      "science fiction"
+    ]
+  },
+  {
+    "Id": 4,
+    "FirstName": "J.",
+    "MiddleName": "R. R.",
+    "LastName": "Tolkein",
+    "Genres": [
+      "fantasy",
+      "high fantasy",
+      "translation",
+      "literary criticism"
+    ]
+  },
+  {
+    "Id": 5,
+    "FirstName": "Mary",
+    "MiddleName": "Wollstonecraft",
+    "LastName": "Shelley",
+    "Genres": [
+      "Gothic",
+      "historical fantasy",
+      "science fiction"
+    ]
+  }
+]

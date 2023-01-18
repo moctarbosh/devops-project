@@ -1,0 +1,149 @@
+[
+  {
+    "Id": 1,
+    "AuthorId": 1,
+    "Title": "The Black Cat",
+    "LiteraryType": "short story",
+    "PublicationDate": 1843
+  },
+  {
+    "Id": 2,
+    "AuthorId": 1,
+    "Title": "The Cask of Amontillado",
+    "LiteraryType": "short story",
+    "PublicationDate": 1846
+  },
+  {
+    "Id": 3,
+    "AuthorId": 1,
+    "Title": "Annabel Lee",
+    "LiteraryType": "poem",
+    "PublicationDate": 1850
+  },
+  {
+    "Id": 4,
+    "AuthorId": 1,
+    "Title": "The Raven",
+    "LiteraryType": "narrative poem",
+    "PublicationDate": 1845
+  },
+  {
+    "Id": 5,
+    "AuthorId": 1,
+    "Title": "The Narrative of Arthur Gordon Pym of Nantucket",
+    "LiteraryType": "novel",
+    "PublicationDate": 1838
+  },
+  {
+    "Id": 6,
+    "AuthorId": 2,
+    "Title": "Stranger in a Strange Land",
+    "LiteraryType": "novel",
+    "PublicationDate": 1961
+  },
+  {
+    "Id": 7,
+    "AuthorId": 2,
+    "Title": "Starship Troopers",
+    "LiteraryType": "novel",
+    "PublicationDate": 1959
+  },
+  {
+    "Id": 8,
+    "AuthorId": 2,
+    "Title": "Glory Road",
+    "LiteraryType": "novel",
+    "PublicationDate": 1963
+  },
+  {
+    "Id": 9,
+    "AuthorId": 3,
+    "Title": "A Wizard of Earthsea",
+    "LiteraryType": "novel",
+    "PublicationDate": 1968
+  },
+  {
+    "Id": 10,
+    "AuthorId": 3,
+    "Title": "The Left Hand of Darkness",
+    "LiteraryType": "novel",
+    "PublicationDate": 1969
+  },
+  {
+    "Id": 11,
+    "AuthorId": 3,
+    "Title": "The Word for World is Forest",
+    "LiteraryType": "novel",
+    "PublicationDate": 1973
+  },
+  {
+    "Id": 12,
+    "AuthorId": 3,
+    "Title": "Always Coming Home",
+    "LiteraryType": "novel",
+    "PublicationDate": 1985
+  },
+  {
+    "Id": 13,
+    "AuthorId": 4,
+    "Title": "The Hobbit",
+    "LiteraryType": "novel",
+    "PublicationDate": 1937
+  },
+  {
+    "Id": 14,
+    "AuthorId": 4,
+    "Title": "The Fellowship of the Ring",
+    "LiteraryType": "novel",
+    "PublicationDate": 1954
+  },
+  {
+    "Id": 15,
+    "AuthorId": 4,
+    "Title": "The Two Towers",
+    "LiteraryType": "novel",
+    "PublicationDate": 1954
+  },
+  {
+    "Id": 16,
+    "AuthorId": 4,
+    "Title": "The Return of the King",
+    "LiteraryType": "novel",
+    "PublicationDate": 1955
+  },
+  {
+    "Id": 17,
+    "AuthorId": 4,
+    "Title": "The Silmarillion",
+    "LiteraryType": "novel",
+    "PublicationDate": 1977
+  },
+  {
+    "Id": 18,
+    "AuthorId": 5,
+    "Title": "Frankenstein",
+    "LiteraryType": "novel",
+    "PublicationDate": 1818
+  },
+  {
+    "Id": 19,
+    "AuthorId": 5,
+    "Title": "Mathilda",
+    "LiteraryType": "novella",
+    "PublicationDate": 1959
+  },
+  {
+    "Id": 20,
+    "AuthorId": 5,
+    "Title": "The Last Man",
+    "LiteraryType": "novel",
+    "PublicationDate": 1826
+  },
+  {
+    "Id": 21,
+    "AuthorId": 5,
+    "Title": "Rambles in Germany and Italy",
+    "LiteraryType": "travel narrative",
+    "PublicationDate": 1844
+  }
+]

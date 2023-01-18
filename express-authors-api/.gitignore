@@ -1,0 +1,37 @@
+# compiled output
+/tmp
+*.xlsx
+
+# dependencies
+/node_modules
+package-lock.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+.editorconfig
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# misc
+_data-service-template.js
+_notes.txt
+/connect.lock
+/pub/_files
+/server/files
+/libpeerconnection.log
+
+# System Files
+.DS_Store
+/*.env
+Thumbs.db
