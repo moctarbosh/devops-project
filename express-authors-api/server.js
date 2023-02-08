@@ -4,6 +4,9 @@ const port = 8081;
 
 // implement API routes
 const authorsAPI = require('./server/authors-api');
+var responseTime = require('response-time')
+
+app.use(responseTime())
 
 app.use('/authors', authorsAPI);
 

@@ -30,4 +30,4 @@ services:
 volumes:
   prometheus-data:
   grafana-data:
-  alertmanager-data:
+  alertmanager-data: 

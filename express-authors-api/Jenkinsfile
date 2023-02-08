@@ -1,0 +1,87 @@
+pipeline {
+  environment {
+    registry = "swaninho/express-authors-api"
+    registryCredential = 'docker-hub-credentials'
+    dockerImage = ''
+  }
+  agent any
+  tools {nodejs "NodeJs"}
+  stages {
+    stage('Install dependencies of the app') {
+      steps {
+        dir('express-authors-api') {
+          sh 'npm install'
+        }
+      }
+    }
+    stage('Run unit tests') {
+      steps {
+        dir('express-authors-api') {
+          sh 'npm run test -- authors.test.js'
+        }
+      }
+    }
+    stage('Building Docker image') {
+      steps{
+        dir('express-authors-api') {
+          script {
+            dockerImage = docker.build(registry + ":$BUILD_NUMBER")
+          } 
+        }
+      }
+    }
+    stage('Deploy Docker image') {
+      steps{
+        dir('express-authors-api') {
+          script {
+            docker.withRegistry( '', registryCredential ) {
+              dockerImage.push()
+            }
+          }
+        }
+      }
+    }
+    stage('Deploy to PREPROD env') {
+      steps{
+        dir('express-authors-api') {
+          sh 'docker ps -f name=^preprod$ -q | xargs --no-run-if-empty docker container stop'
+          sh 'docker container ls -a -fname=^preprod$ -q | xargs -r docker container rm'
+          script{
+            dockerImage.run('--restart always --name preprod -p 8082:8082')
+            dockerImage.inside{
+                sh 'npm run test -- performance.test.js'
+            }
+          }   
+        }
+      }
+    }
+
+    stage('Deploy to ACCEPTANCE env') {
+      steps{
+        dir('express-authors-api') {
+          sh 'docker ps -f name=^acceptance$ -q | xargs --no-run-if-empty docker container stop'
+          sh 'docker container ls -a -fname=^acceptance$ -q | xargs -r docker container rm'
+          script{
+            dockerImage.run('--restart always --name acceptance -p 8083:8083')
+            dockerImage.inside{
+                sh 'npm run test -- authors.test.js'
+            }
+          }   
+        }
+      }
+    }
+
+    stage('Deploy to PROD env') {
+      steps{
+        dir('express-authors-api') {
+          sh 'docker ps -f name=^prod$ -q | xargs --no-run-if-empty docker container stop'
+          sh 'docker container ls -a -fname=^prod$ -q | xargs -r docker container rm'
+          script{
+            dockerImage.run('--restart always --name prod -p 8084:8084')
+          }   
+        }
+      }
+    }
+
+  }
+}
